@@ -1,0 +1,261 @@
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+.top-basket {
+        height: 400px;
+        background-image: url("../img/topcart.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+}
+.logo{
+        padding-top: 16px;
+}
+.basket {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+        margin-top: 64px;
+}
+.basket_content{
+        display: grid;
+        grid-column: span 8;
+        }
+ .basket_name_box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        border-bottom: 0.5px solid #CACDD8;
+                }
+.basket_items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 0.5px solid #CACDD8;
+        margin-top: 25px;
+        padding-bottom: 32px;
+        }
+.basket_form {
+        display: grid;
+        grid-column: span 4;
+        box-sizing: border-box;
+        background-color: #F7F6F6;
+        border-radius: 20px;
+        height: 556px;
+        width: 379px;
+        justify-items: center;
+        &_button:hover{
+                animation: myAnim 3s ease 0s 1 normal forwards;
+        }
+}
+.basket_card{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 31px;
+}
+.basket_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+.number{
+        background-color: #F7F6F6;
+        border-radius: 6px;
+        border-color: transparent;
+        width: 71px;
+        height: 51px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 210%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+}
+.title_basket{
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+}
+.image{
+        width: 173px;
+        height: 173px;
+}
+.text_basket{
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+}
+.price{
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #050505;
+}
+.link_info{
+        font-family: 'Montserrat';
+        color: grey;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 210%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        text-decoration-line: underline;
+        color: grey;
+}
+.button{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 10px;
+}
+.button_basket{
+        box-sizing: border-box;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        background-color: transparent;
+        width: 200px;
+        height: 37px;
+        text-align: center;
+        margin-bottom: 159px;
+        margin-top: 20px;
+        transition: all 0.3s;
+&:hover{
+        background-color:black;
+        color: white;
+}
+}
+.title_form {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+        width: 379px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        padding-top: 42px;
+}
+.text_form{
+        box-sizing: border-box;
+        width: 288px;
+        border-bottom: 1px solid #CACDD8;
+        font-family: 'Montserrat';
+        background-color: transparent;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        padding-bottom: 4px;
+        padding-top: 41px;
+        font-weight: 400;
+        font-size: 14px;
+}
+.summa{
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        padding-top: 64px;
+}
+@media (max-width: 1024px){
+        .center{ 
+            padding-left: calc(50% - 786px/2);
+            padding-right: calc(50% - 786px/2);
+        }
+        .basket{
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+}
+@media (max-width: 767px){
+  .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .basket_content{
+        grid-column: span 4;
+    }
+    .image{
+        display: none;
+    }
+    .title_basket{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .text_basket{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .price{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .basket_info{
+        gap: 15px;
+    }
+    .button_basket{
+        width: 163px;
+        height: 37px;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 48px;
+    }
+    .basket_form{
+        width: 343px;
+        height: 556px;
+        justify-content: center;
+    }
+    .product{
+        box-sizing: content-box;
+        padding: 3px;
+    }
+}
